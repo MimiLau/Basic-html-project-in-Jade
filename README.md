@@ -26,18 +26,21 @@ grunt jade
 ```
 
 # Bugs are waiting for fixed
-- `postcss` cannot use
+- [ ] `postcss` cannot use
 	disable now
-- `stylelint` is annoying
+- [ ] `stylelint` is annoying
 	disable stylint atom plugin now
-- read markdown `include:md` is red dot in atom editor
+- [ ] read markdown `include:md` is red dot in atom editor
 ```
 In order to apply the transform markdown you must install one of "marked","supermarked","markdown-js","markdown"
 ```
-- `.sass-cache` folder is created
+- [ ] `.sass-cache` folder is created
 ```
 Sass cache files speed up compilation based on whether a Sass file has changed since last compile.
 ```
-
+- [ ] `grunt jade` has error
+- [ ] 404 page redirect
+- [ ] publish to __username__.github.io
 
 # Changelog
+- gitignore the .html
