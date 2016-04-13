@@ -1,0 +1,37 @@
+nav.navbar
+	button.navbar-toggler.hidden-md-up.pull-xs-left(type="button" data-toggle="collapse" data-target="#collapsingNavbar")
+		span.icon-bar
+		span.icon-bar
+		span.icon-bar
+		span.sr-only menu
+	.navbar-wrapper
+		a.logo.pull-md-left(href="/" alt="AfterShip logotype" title="Home")
+			.sr-only
+				p.m-b-0 Home
+		#collapsingNavbar.collapse
+			ul.navbar-toggleable-sm.main-nav.text-uppercase
+				include ../partials/_topnavigation
+			.pull-md-right.main-nav__right.hidden-sm-down
+				ul.main-nav
+					if (contentLocales)
+						- var localesAttrs = {}
+						li.main-nav__item.dropdown.language-dropdown
+							a.nav-link.main-nav__parent-link(
+							href="#"
+							class="dropdown-toggle"
+							data-toggle="dropdown"
+							role="button"
+							aria-haspopup="true"
+							aria-expanded="false"
+							)
+								i.fa.fa-globe
+								| #{currentLocale.label}
+
+							ul.dropdown-menu
+								each contentLocale in contentLocales
+									if (contentLocale.id !== currentLocale.id)
+										li
+											a.dropdown-item.lang-selector(href="#{getLocalizedHref(contentLocale.id, reqUrl)}", data-lang="#{contentLocale.id}")= contentLocale.label
+					li.main-nav__item: a.nav-link.main-nav__parent-link(href="http://secure.aftership.com/login") #{generic.topmenu.login}
+					li.main-nav__item: a.btn.btn-signup.t1(href="https://secure.aftership.com/signup") #{generic.topmenu.signUp}
+.pageoverlay.hidden-md-up

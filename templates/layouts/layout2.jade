@@ -1,0 +1,25 @@
+include ../partials/_doctype
+head
+	title= pageTitle
+	include ../partials/_meta
+	include ../partials/_styles
+body
+	.container
+		h1.page-header= pageTitle
+		p.lead Welcome to example from Express.js Experience by&nbsp;
+			a(href="http://twitter.com/azat_co") @azat_co
+			|. Please enjoy.
+		block page
+		
+		block header
+			nav
+				//- include ../partials/_menu
+			main.content
+				block content
+	block footer
+		footer
+			.container
+				p
+					| Copyright &copy; 2014 | Issues? Submit to 
+					a(href=" https://github.com/azat-co/blog-express/issues") GitHub
+					| .
