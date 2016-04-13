@@ -1,0 +1,22 @@
+include ../partials/_doctype
+head
+	title= pageTitle
+	include ../partials/_favicons
+	include ../partials/_meta
+	include ../partials/_styles
+body
+	block content
+	
+	block back
+		.container
+			.p-y-2
+				a(href="/") Back to home
+		
+	block footer
+		footer
+			.container
+				.footer.p-y-2
+					p Running on node with Express ＆ Jade
+					p Copyright &copy; 2016 |  
+						a(href=" https://github.com/MimiLau/Basic-html-project-in-Jade") GitHub
+						| .

@@ -7,7 +7,7 @@ module.exports = {
 	  options: {
 			pretty: true,
 			files: {
-			    "*": ["views/*.jade", "!layouts/*.jade"]
+			    "*": ["views/**/*.jade", "!layouts/*.jade"]
 			  }
 	  }
 	}

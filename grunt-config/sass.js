@@ -10,7 +10,7 @@ module.exports = {
 	},
 	dev: {
 		files: {
-			'assets/css/main.css': 'src/style/style.scss'
+			'assets/css/main.css': 'src/style/styles.scss'
 		}
 	}
 };

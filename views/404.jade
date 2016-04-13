@@ -1,0 +1,20 @@
+extends ../templates/layouts/layout
+
+block content
+	section.hero.text-xs-center
+		h1.page-header Home
+		p Welcome to example of Basic HTML by Jade
+	main
+		.container
+			section
+				.row
+					.col-md-6.col-md-offset-3.p-y-3.text-xs-center
+						.card.m-t-3.m-b-3
+							.card-header
+								h2.m-b-0 404
+							.card-bock.p-y-1
+								p.m-b-0 Sorry no such page.
+						p
+							a(href="/") Go back home
+	//- h1 README
+	//- include:md ../README.md

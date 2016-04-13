@@ -1,31 +1,17 @@
 include ../partials/_doctype
-
 head
+	title= pageTitle
+	include ../partials/_favicons
 	include ../partials/_meta
-	block title
-		title= pageTitle
-	block head
-		include ../partials/_favicons
-		include ../partials/_styles
-
-- var bodyAttrs = {};
-if bodyClass
-	- bodyAttrs.class = bodyClass
-body()&attributes(bodyAttrs) 
-	//- include ../partials/_ga
-	.container
-		//- include ../partials/_navbar
- 
-		block appMain
-		main.page-content
-			block main
-		block secondary
-
-		block pagefooter
-			//- include ../partials/_pagefooter
-
-	block bodyfooter
-		script(src="//code.jquery.com/jquery-2.1.4.min.js")
-		//- if (env === 'development')
-		//- 	script(src="/js/vendor/tota11y.min.js")
-		//- != js("everypage.min")
+	include ../partials/_styles
+body
+	block content
+		
+	block footer
+		footer
+			.container
+				.footer.p-y-2
+					p Running on node with Express ＆ Jade
+					p Copyright &copy; 2016 |  
+						a(href=" https://github.com/MimiLau/Basic-html-project-in-Jade") GitHub
+						| .

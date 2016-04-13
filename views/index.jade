@@ -1,16 +1,16 @@
-extends ../templates/layouts/layout2
+extends ../templates/layouts/layout
 
-block page
-	- var menu = 'index'
 block content
-	- var articles = ['php', 'node', 'ruby']
-	if (articles.length === 0)
-		| There's no published content yet.
-		a(href="/login") Log in
-		| to post and publish.
-	else
-		each article, index in articles
-			div
-				h2
-					a(href="/articles/#{article}")= article
-	include:md README.md
+	section.hero.text-xs-center
+		h1.page-header Home
+		p.s-16 Welcome to example of Basic HTML by Jade
+	main
+		.container
+			section.p-y-3
+				each post in posts
+					div
+						h2
+							a(href="#{post}")= post
+							
+	//- h1 README
+	//- include:md ../README.md
