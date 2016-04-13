@@ -8,6 +8,12 @@ npm start
 ```
 and go to [http://localhost:3001](http://localhost:3001)
 
+To start blogging:
+```
+grunt prompt
+```
+will ask you the blog post, please don't left any space,
+then the `README,md` will pop out by atom, save it and you will see the blog appear in homepage.
 
 To auto compile `.scss` and `.js` from `src` to `assets` folder:
 ```
