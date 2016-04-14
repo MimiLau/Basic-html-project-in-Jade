@@ -5,10 +5,10 @@ module.exports = {
 	},
 	dev: {
 	  options: {
-			pretty: true,
+			pretty: false,
 			files: {
-			    "*": ["blogs/**/*.jade", "/*.jade", "!layouts/*.jade"]
-			  }
+			    "*": ["blogs/**/*.jade", "*.jade", "!layouts/*.jade"]
+			}
 	  }
 	}
 };

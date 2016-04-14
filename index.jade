@@ -2,12 +2,14 @@ extends templates/layouts/layout
 
 block content
 	section.hero.text-xs-center
-		h1.page-header Home
+		h1.page-header= pageTitle
 		p.s-16 Welcome to example of Basic HTML by Jade
 	main
 		.container
 			section.p-y-3
-				each post in posts
+				//- each post in posts
+				each post in posts.length ? posts : ['There are no posts']
+					- var postTitle = S(post).humanize().s
 					div
-						h2
-							a(href= post)= post
+						p.s-30
+							a(href= post)= postTitle
