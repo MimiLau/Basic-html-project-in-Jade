@@ -1,15 +1,15 @@
 'use strict';
 module.exports = {
 	mkdir: {
-		command:	'mkdir views/"<%= create.post %>"'
+		command:	'mkdir blogs/"<%= create.post %>"'
 	},
 	copy: {
-		command:	'cp views/first-post/index.jade views/<%= create.post %>'
+		command:	'cp blogs/first-post/index.jade blogs/<%= create.post %>'
 	},
 	touch: {
-		command:	'touch views/<%= create.post %>/README.md'
+		command:	'touch blogs/<%= create.post %>/README.md'
 	},
 	edit: {
-		command:	'atom views/<%= create.post %>/README.md'
+		command:	'atom blogs/<%= create.post %>/README.md'
 	}
 };

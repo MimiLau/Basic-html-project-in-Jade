@@ -23,10 +23,13 @@ module.exports = function(grunt) {
 	// `grunt css`
 	grunt.registerTask('css', () => {
 		grunt.task.run('sass:' + env);
-		grunt.task.run('autoprefixer');
+		grunt.task.run('autoprefixer:' + env);
 		// grunt.task.run('postcss:' + env);
-		grunt.task.run('cssmin');
+		grunt.task.run('cssmin:' + env);
 	});
+
+	// `grunt blog`
+	grunt.registerTask('blog', ['prompt']);
 
 	// `grunt`
 	grunt.registerTask('default', ['js', 'css']);

@@ -1,24 +1,26 @@
 # Features
 - Compile jade in to html
+- `grunt prompt` to blog
 
 # Usage
-To start server:
+
+## To Start server
 ```
 npm start
 ```
 and go to [http://localhost:3001](http://localhost:3001)
 
-To start blogging:
-```
-grunt prompt
-```
-will ask you the blog post, please don't left any space,
-then the `README,md` will pop out by atom, save it and you will see the blog appear in homepage.
-
 To auto compile `.scss` and `.js` from `src` to `assets` folder:
 ```
 grunt watch
 ```
+
+## To start blogging
+```
+grunt blog
+```
+will ask you the blog post, please don't left any space, i.e. `first-post`
+then the `README,md` will pop out by atom, save it and you will see the blog appear in homepage.
 
 To convert jade into html:
 ```
@@ -40,7 +42,7 @@ Sass cache files speed up compilation based on whether a Sass file has changed s
 ```
 - [ ] `grunt jade` has error
 - [ ] 404 page redirect
-- [ ] publish to __username__.github.io
+- [ ] publish to _username_.github.io
 
 # Changelog
 - gitignore the .html

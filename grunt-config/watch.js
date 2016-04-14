@@ -10,7 +10,7 @@ module.exports = {
 		tasks: ['js']
 	}
 	// jade:{
-	// 	files: ["views/*.jade"],
+	// 	files: ["blogs/*.jade"],
 	// 	tasks: ["jade"]
 	// }
 };
