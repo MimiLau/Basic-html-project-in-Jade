@@ -32,7 +32,9 @@ To convert jade into html:
 (To do)
 ```
 
-# Bugs are waiting for fixed
+# To Do list
+
+## Bug fixing
 - [ ] `postcss` cannot use
 		--> disable now
 - [ ] `stylelint` is annoying
@@ -42,9 +44,12 @@ To convert jade into html:
 - [ ] `.sass-cache` folder is created
 		--> Sass cache files speed up compilation based on whether a Sass file has changed since last compile.
 - [ ] `grunt jade` has error
+
+## To-do
 - [x] 404 page redirect
-- [ ] publish to _username_.github.io
 - [ ] blog post listed order by date
+- [ ] convert `.jade` to `.html`
+- [ ] publish to _username_.github.io
 - [ ] when input blog name, convert space into `-`
 
 # Changelog
