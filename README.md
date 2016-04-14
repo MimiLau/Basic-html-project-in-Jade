@@ -23,10 +23,14 @@ will ask you the blog post, please don't left any space, i.e. `first-post`
 then the `README,md` will pop out by atom, save it and you will see the blog appear in homepage.
 
 To convert jade into html:
+```
 (To do)
+```
 
 ## To publish the blog
+```
 (To do)
+```
 
 # Bugs are waiting for fixed
 - [ ] `postcss` cannot use
