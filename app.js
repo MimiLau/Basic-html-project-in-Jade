@@ -10,6 +10,7 @@ var files = fs.readdirSync(dir);
 
 app.set('view engine', 'jade');
 app.set('views', __dirname + '/'); // specify the views directory
+app.set('port', (process.env.PORT || 3001));
 
 // Static resource lookup
 app.use('/assets', express.static(__dirname + '/assets'));
@@ -31,6 +32,6 @@ app.get('/:post', function(req, res, err){
 
 
 app.listen(3001, function(){
-	console.log('Express server listening on port: 3001');
+	console.log('Express server listening on port:', app.get('port'));
 	console.log('http://localhost:3001/');
 });
