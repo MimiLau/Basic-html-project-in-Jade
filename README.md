@@ -35,9 +35,9 @@ To convert jade into html:
 # To Do list
 
 ## Bug fixing
-- [ ] `postcss` cannot use
+- [x] `postcss` cannot use
 		--> disable now
-- [ ] `stylelint` is annoying
+- [x] `stylelint` is annoying
 		--> disable stylelint atom plugin now
 - [ ] read markdown `include:marked` is red dot in atom editor
 		--> In order to apply the transform markdown you must install one of "marked","supermarked","markdown-js","markdown"
@@ -53,6 +53,9 @@ To convert jade into html:
 - [ ] when input blog name, convert space into `-`
 
 # Changelog
+18-4-2016
+- the config of stylelint was missing. Adding back the `.stylelintrc.json`, postcss now works with stylelint.
+
 14-4-2016
 - redirect to 404 page if no such post
 

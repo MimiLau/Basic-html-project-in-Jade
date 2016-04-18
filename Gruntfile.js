@@ -24,7 +24,7 @@ module.exports = function(grunt) {
 	grunt.registerTask('css', () => {
 		grunt.task.run('sass:' + env);
 		grunt.task.run('autoprefixer:' + env);
-		// grunt.task.run('postcss:' + env);
+		grunt.task.run('postcss:' + env);
 		grunt.task.run('cssmin:' + env);
 	});
 
